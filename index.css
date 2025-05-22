@@ -13,6 +13,7 @@
 }
 
 body {
+	background-color: #1d1909;
 	min-height: 100vh;
 	background: linear-gradient(to bottom, #0c0c0c 70%, #1d1909);
 	background-repeat: no-repeat;
@@ -192,4 +193,38 @@ footer p {
 
 .links i:hover {
 	color: #a8963a;
+}
+
+@media screen and (width <= 600px) {
+	.content-left,
+	.content-right {
+		align-items: center;
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+		text-align: center !important;
+	}
+
+	.links {
+		justify-content: center;
+	}
+
+	.text-right {
+		text-align: center;
+	}
+
+	.content-wrap {
+		min-width: 70%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	section {
+		margin-top: 20% !important;
+		margin-bottom: 10% !important;
+	}
 }
